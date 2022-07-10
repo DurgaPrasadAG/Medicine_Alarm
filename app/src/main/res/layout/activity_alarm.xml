@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlarmActivity">
+
+    <TextView
+        android:id="@+id/medicineDbTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="103dp"
+        android:layout_marginBottom="56dp"
+        android:text="Medicine Database"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/medicineNameText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/medicineLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="46dp"
+        android:text="Medicine Name"
+        android:textAlignment="viewEnd"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/dateLabel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/dateLabel"
+        android:layout_width="136dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="50dp"
+        android:text="Date"
+        android:textAlignment="viewEnd"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/timeLabel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/timeLabel"
+        android:layout_width="133dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="416dp"
+        android:text="Time"
+        android:textAlignment="viewEnd"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/medicineNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/dateText"
+        app:layout_constraintStart_toEndOf="@+id/medicineLabel" />
+
+    <EditText
+        android:id="@+id/dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:focusableInTouchMode="false"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/timeText"
+        app:layout_constraintStart_toEndOf="@+id/dateLabel" />
+
+    <EditText
+        android:id="@+id/timeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:focusableInTouchMode="false"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/insertButton"
+        app:layout_constraintStart_toEndOf="@+id/timeLabel" />
+
+    <Button
+        android:id="@+id/insertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="332dp"
+        android:text="INSERT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.844"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
